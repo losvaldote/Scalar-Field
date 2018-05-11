@@ -8,7 +8,7 @@ class DarkM:
     def __init__(self, mquin=1, name='Alberto'):
 
         self.name   = name
-        self.cte    = 3/2.0
+        self.cte    = 3./2.0
 
 
         self.NP = 120000
@@ -54,10 +54,10 @@ class DarkM:
 	     k_2 = k_1
              k_1 = func(t[i], y[i], args)
 	     #Adams Bashforth predictor
-	     y[i+1] = y[i] + h*(55*k_1 - 59*k_2 + 37*k_3 - 9*k_4)/24
+	     y[i+1] = y[i] + h*(55.*k_1 - 59.*k_2 + 37.*k_3 - 9.*k_4)/24.
 	     k_0 = func(t[i+1],y[i+1], args)
 	     #Adams Moulton corrector
-	     y[i+1] = y[i] + h*(9*k_0 + 19*k_1 - 5*k_2 + k_3)/24
+	     y[i+1] = y[i] + h*(9.*k_0 + 19.*k_1 - 5.*k_2 + k_3)/24.
         return y 
 
 
@@ -70,7 +70,7 @@ class DarkM:
     def RHS(self, t, y, args):
         x0, x1, x2, x3, x4 = y
         Pe = 2.0*x0*x0+4.0*x2*x2/3.0
-        return np.array([-3*x0-x1*x4+self.cte*Pe*x0, x0*x4+self.cte*Pe*x1, self.cte*(Pe-(4.0/3.0))*x2,
+        return np.array([-3.*x0-x1*x4+self.cte*Pe*x0, x0*x4+self.cte*Pe*x1, self.cte*(Pe-(4.0/3.0))*x2,
                 self.cte*Pe*x3, self.cte*Pe])
 
 
