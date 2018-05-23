@@ -40,7 +40,7 @@ class DarkM:
 
 
 #Adams-Bashforth 4/Moulton 4 Step Predictor/Corrector
-    def ABM3(self, func, y_0, t, args={}):
+    def ABM4(self, func, y_0, t, args={}):
 	y = np.zeros([len(t), len(y_0)])
 	#Se calcularan los primeros pasos con rk4
         y[0:4] = self.rk4(func,y_0, t)
@@ -63,7 +63,7 @@ class DarkM:
 
     def solver(self, masa):
         y0       = np.array([np.sqrt(0.2295), np.sqrt(0.00043), np.sqrt(0.000043), np.sqrt(0.73), masa])
-        y_result = self.ABM3(self.RHS, y0, self.t)
+        y_result = self.ABM4(self.RHS, y0, self.t)
         return y_result
 
 
