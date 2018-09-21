@@ -1,0 +1,7 @@
+SF_markiii.py
+
+Se implementó el método Adams-Bashfoth (predictor) de 4 pasos con un Adams-Moulton (corrector) de 4 pasos.
+
+Es necesario revisar el código que genera las gráficas pues cuando se usan 10 000 pasos se tiene un problema con esa función. Si quitamos ésa sección del código el Método ABM implementado funciona bien con 10 000 pasos.
+
+Se pusieron todos los números como flotantes,es decir, se les puso un punto al final.

@@ -1,0 +1,6 @@
+Instrucciones Mark v.
+
+En esta versión vamos a modificar la versión Mark iii pero vamos a implementar la librería odespy para usar el método ABM. La función se llama 
+
+				odespy.AdamsBashMoulton3(f)
+

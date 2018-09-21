@@ -1,0 +1,4 @@
+Instrucciones.
+lambda_marki.py
+
+En esta versión se resolverán las ecuaciones de Friedmann considerando el modelo lambda CDM.

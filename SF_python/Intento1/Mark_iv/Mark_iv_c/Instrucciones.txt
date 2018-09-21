@@ -1,0 +1,3 @@
+Instrucciones SF_markiv_b.py
+
+Esta es una versión alterna del mark iv en la que se agregaron radiación, bariones y energía oscura para poder graficarlas. 

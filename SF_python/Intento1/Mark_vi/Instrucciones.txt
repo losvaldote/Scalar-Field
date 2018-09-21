@@ -1,0 +1,6 @@
+Instrucciones SF_markvi.py
+
+Para el modelo SFDM. 
+Esta es una versión evolucionada del mark iii combinada con la mark iv en la que se agregaron radiación y energía oscura para poder graficarlas.
+Además se agregarán los bariones.
+Se consideran tres valores distintos de la masa y se grafican los resultados juntos.

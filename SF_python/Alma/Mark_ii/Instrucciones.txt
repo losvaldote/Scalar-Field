@@ -1,0 +1,3 @@
+Alma Mark ii.
+
+En esta verión del código se van a obtener varias gráficas con distintos valores de la masa del campo escalar en una sola.

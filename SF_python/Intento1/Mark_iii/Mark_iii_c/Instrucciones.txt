@@ -1,0 +1,5 @@
+Instrucciones SF_markiii_b.py
+
+Esta es una versión alterna del mark iii en la que se agregaron radiación y energía oscura para poder graficarlas.
+Además se agregarán los bariones.
+ 

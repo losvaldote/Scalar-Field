@@ -1,0 +1,10 @@
+SF_markiv.py
+En esta versión del programa se pretende crear una función que incluya el solver de tal forma que la función reciba distintas condiciones iniciales de la masa y genere gráficas distintas en función del valor de la masa recibida.
+
+Se modificó la función plot para que recibiera el valor de la masa. Luego este valor es pasado al solver y así se obtiene la solución con el valor inicial de la masa dada.
+
+El ciclo for con el que se darán distintos valores de la masa se colocó fuera de la clase DM. Este for llama varias veces a las función DM.plot para obtener varias gráficas con cada valor de la masa dado.
+
+Para poder tener gráficas distintas con cada valor de la masa se guardaron con diferentes nombres, se usa el valor de la masa para asignar el nombre. Como el valor de la masa es un número este tuvo que ser convertido a string para que pudiera ser usado en el nombre de la función. Se usó el comando str(valor).
+
+Se usa plt.ion() para activar el modo activo al inicio del plot. Esto nos permitirá usar el comando plt.close() para que las ventanas de las gráficas se cierren solas pero se vayan guardando. Si no se hace de esta manera se generará la primera gráfica sin embargo el programa no seguirá ejecuntándose hasta que hayamos cerrado la ventana. De esta forma el programa abre, guarda y cierra la ventana de forma automática.
